@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: contain;
+}
+
+/* --- */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  min-height: 450px;
+
+  font-family: sans-serif;
+}
+
+/* --- */
+
+header {
+  height: 20%;
+  background-color: black;
+  color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-bottom: 2.5px solid rgb(129, 129, 129);
+
+  text-shadow: 1.5px 1.5px 3px rgba(255, 255, 255, 0.6);
+}
+
+header h1 {
+  margin-bottom: 7.5px;
+}
+
+main {
+  height: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.4);
+}
+
+main h3 {
+  margin-top: 15px;
+}
+
+main h3 span {
+  background-color: yellow;
+}
+
+footer {
+  height: 10%;
+  background-color: black;
+  color: aliceblue;
+  text-shadow: 1.5px 1.5px 3px rgba(255, 255, 255, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 2.5px solid rgb(129, 129, 129);
+}
+
+/* --- */
+
+@media (orientation: portrait) {
+  header {
+    background-color: aliceblue;
+    color: black;
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  main {
+    background-color: black;
+    text-shadow: 1.5px 1.5px 3px rgba(255, 255, 255, 0.6);
+    color: aliceblue;
+  }
+
+  footer {
+    background-color: aliceblue;
+    color: black;
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.6);
+  }
+}
